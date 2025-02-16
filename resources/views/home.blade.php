@@ -9,8 +9,8 @@
                 <h2 class="text-2xl font-semibold">Fylo</h2>
                 <p class="mt-2 text-gray-600">A sleek cloud storage landing page with dark mode.</p>
             </a>
-            <a href="{{ url('loopstudios') }}" class="p-6 border rounded-lg hover:bg-green-100">
-                <h2 class="text-2xl font-semibold">LoopStudios Landing Page</h2>
+            <a href="{{ url('loopstudio') }}" class="p-6 border rounded-lg hover:bg-green-100">
+                <h2 class="text-2xl font-semibold">LoopStudio Landing Page</h2>
                 <p class="mt-2 text-gray-600">A modern digital studio showcase with interactive elements.</p>
             </a>
             <a href="{{ url('shortly') }}" class="p-6 border rounded-lg hover:bg-red-100">

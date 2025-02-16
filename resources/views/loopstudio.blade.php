@@ -6,8 +6,7 @@
             class="relative container flex flex-col max-w-6xl mx-auto my-32 px-6 text-gray-900 md:flex-row md:px-0"
         >
             <!-- Image -->
-            <img src="{{ asset('assets/loopstudio/images/desktop/image-interactive.jpg') }}" alt="" />
-
+            <img src="{{ asset('/assets/loopstudio/images/desktop/image-interactive.jpg') }}" alt="" />
             <!-- Text Container -->
             <div
                 class="top-48 pr-0 bg-white md:absolute md:right-0 md:py-20 md:pl-20"
