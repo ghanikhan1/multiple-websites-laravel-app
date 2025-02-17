@@ -2,6 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
+// Define custom colors
+$cyan: hsl(180, 66%, 49%);
+$cyan-light: hsl(180, 66%, 69%);
+$dark-violet: hsl(257, 27%, 26%);
+$red: hsl(0, 87%, 67%);
+$grayish-violet: hsl(257, 7%, 63%);
+$very-dark-blue: hsl(255, 11%, 22%);
+$very-dark-violet: hsl(260, 8%, 14%);
+
+
+
+// Define custom classes using SCSS variables
+.bg-darkViolet {
+    background-color: $dark-violet;
+}
+.text-veryDarkViolet {
+    color: $very-dark-violet;
+}
+.bg-cyan {
+    background-color: $cyan;
+}
+.bg-cyanLight {
+    background-color: $cyan-light;
+}
+.text-grayishViolet {
+    color: $grayish-violet;
+}
+
+
 #cta {
     background-image: url('../../public/assets/shortly/images/bg-boost-desktop.svg');
     background-repeat: no-repeat;
