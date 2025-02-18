@@ -21,8 +21,6 @@ fetch('https://api.github.com/users/ghanikhan1/repos?sort=updated&per_page=3')
                 <div class="p-6 border rounded-lg shadow-lg bg-white">
                     <h3 class="text-2xl font-semibold">${repo.name}</h3>
                     <p class="text-gray-600">${repo.description || 'No description available'}</p>
-                    <p class="text-sm mt-2 text-gray-500">⭐ Stars: ${repo.stargazers_count} | 🍴 Forks: ${repo.forks_count}</p>
-                    <a href="${repo.html_url}" target="_blank" class="text-blue-500 font-semibold mt-4 inline-block">View on GitHub →</a>
                 </div>
             `;
         });

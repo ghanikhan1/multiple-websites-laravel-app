@@ -11,7 +11,6 @@
                 A collection of modern, high-performance landing pages built with Laravel, Tailwind CSS, Vite, and SCSS.
             </p>
 
-            <!-- Featured Projects -->
             <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
                 <a href="{{ url('fylo') }}"
                    class="project-card p-6 border rounded-xl shadow-lg bg-white hover:scale-105 transition-transform duration-300">
@@ -33,9 +32,8 @@
                 </a>
             </div>
 
-            <!-- Call to Action -->
             <div class="mt-16">
-                <a href="https://github.com/yourprofile" target="_blank"
+                <a href="https://github.com/ghanikhan1" target="_blank"
                    id="github-button"
                    class="cta-button px-6 py-3 text-lg font-semibold text-white bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg shadow-lg hover:scale-105 transition-all duration-300">
                     Explore More on GitHub →
@@ -43,7 +41,7 @@
             </div>
 
             <div class="mt-12">
-                <h2 class="text-3xl font-semibold text-center">📂 My Latest GitHub Repositories</h2>
+                <h2 class="text-3xl font-semibold text-center">My Latest GitHub Repositories</h2>
                 <div id="github-repos" class="mt-6 grid grid-cols-1 md:grid-cols-3 gap-6"></div>
             </div>
 
