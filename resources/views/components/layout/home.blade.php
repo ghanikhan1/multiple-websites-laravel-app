@@ -9,9 +9,11 @@
 </head>
 <body class="dark:bg-darkBlue dark:text-white font-opensans">
 
-<main class="container mx-auto mt-10">
+<main class="container mx-auto">
     {{ $slot }}
 </main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 
 </body>
 </html>

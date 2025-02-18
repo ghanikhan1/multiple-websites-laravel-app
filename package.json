@@ -2,8 +2,8 @@
     "private": true,
     "type": "module",
     "scripts": {
-        "dev": "concurrently \"npm run dev:home\" \"npm run dev:loopstudio\" \"npm run dev:shortly\" \"npm run dev:fylo\"",
-        "build": "concurrently \"npm run build:home\" \"npm run build:loopstudio\" \"npm run build:shortly\" \"npm run build:fylo\"",
+        "dev": "npm run dev:home && npm run dev:loopstudio && npm run dev:shortly && npm run dev:fylo",
+        "build": "npm run build:home && npm run build:loopstudio && npm run build:shortly && npm run build:fylo",
         "dev:home": "vite --config vite-home.config.js",
         "build:home": "vite build --config vite-home.config.js",
         "dev:fylo": "vite --config vite-fylo.config.js",
@@ -26,5 +26,12 @@
         "sass-loader": "^8.0",
         "tailwindcss": "^3.0",
         "vite": "^5.0.0"
+    },
+    "dependencies": {
+        "alpinejs": "^3.14.8",
+        "framer-motion": "^12.4.3",
+        "gsap": "^3.12.7",
+        "three": "^0.173.0",
+        "tsparticles": "^3.8.1"
     }
 }
