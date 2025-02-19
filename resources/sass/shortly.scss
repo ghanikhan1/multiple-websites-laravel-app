@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-// Define custom colors
+// Custom colors
 $cyan: hsl(180, 66%, 49%);
 $cyan-light: hsl(180, 66%, 69%);
 $dark-violet: hsl(257, 27%, 26%);
@@ -13,7 +13,7 @@ $very-dark-violet: hsl(260, 8%, 14%);
 
 
 
-// Define custom classes using SCSS variables
+// Custom classes using SCSS variables
 .bg-darkViolet {
     background-color: $dark-violet;
 }

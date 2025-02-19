@@ -64,16 +64,16 @@
         <!-- Social Container -->
         <div class="flex space-x-6">
             <a href="#">
-                <img src="{{ asset('assets/shortly/images/icon-facebook.svg') }}" alt="" class="Facebook icon" />
+                <img src="{{ asset('assets/shortly/images/icon-facebook.svg') }}" alt="Facebook icon" class="ficon" />
             </a>
             <a href="#">
-                <img src="{{ asset('assets/shortly/images/icon-twitter.svg') }}" alt="" class="Twitter icon" />
+                <img src="{{ asset('assets/shortly/images/icon-twitter.svg') }}" alt="Twitter icon" class="ficon" />
             </a>
             <a href="#">
-                <img src="{{ asset('assets/shortly/images/icon-pinterest.svg') }}" alt="" class="Pinterest icon" />
+                <img src="{{ asset('assets/shortly/images/icon-pinterest.svg') }}" alt="Pinterest icon" class="ficon" />
             </a>
             <a href="#">
-                <img src="{{ asset('assets/shortly/images/icon-instagram.svg') }}" alt="" class="Instagram icon" />
+                <img src="{{ asset('assets/shortly/images/icon-instagram.svg') }}" alt="Instagram icon" class="ficon" />
             </a>
         </div>
     </div>
