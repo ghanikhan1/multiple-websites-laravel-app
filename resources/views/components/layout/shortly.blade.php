@@ -1,10 +1,10 @@
-
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shortly Landing Page</title>
+    <title>{{ $title ?? 'Multi Websites Title' }}</title>
+    <meta name="description" content="{{ $metaDescription ?? 'Multi Websites Description' }}">
 
     @vite(['resources/sass/shortly.scss', 'resources/js/shortly.js'])
 </head>

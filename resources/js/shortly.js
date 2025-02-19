@@ -40,7 +40,7 @@ function formSubmit(e) {
         input.classList.add('border-red')
     } else {
         errMsg.innerHTML = ''
-        input.classList.remove('border-red')
+        input.classList.remove('border-red-500')
         alert('Success')
     }
 }

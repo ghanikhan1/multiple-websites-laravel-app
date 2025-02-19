@@ -9,7 +9,7 @@
             <div class="mt-10 space-y-6">
                 <div class="flex items-center space-x-3 md:-mt-10">
                     <div class="w-6">
-                        <img src="{{ asset('assets/fylo/images/icon-phone.svg') }}" alt="" class="scale-10" />
+                        <img src="{{ asset('assets/fylo/images/icon-phone.svg') }}" alt="Fylo Logo" class="scale-10" />
                     </div>
                     <div>+1-543-123-4567</div>
                 </div>
@@ -43,8 +43,8 @@
                 <div>
                     <a href="#">
                         <img
-                            src="images/facebook.svg"
-                            alt=""
+                            src="{{ asset('assets/fylo/images/facebook.svg') }}"
+                            alt="Facebook Icon"
                             class="p-2 bg-darkBlue rounded-full ficon"
                         />
                     </a>
@@ -52,8 +52,8 @@
                 <div>
                     <a href="#">
                         <img
-                            src="images/twitter.svg"
-                            alt=""
+                            src="{{ asset('assets/fylo/images/twitter.svg') }}"
+                            alt="Twitter Icon"
                             class="p-2 bg-darkBlue rounded-full ficon"
                         />
                     </a>
@@ -61,8 +61,8 @@
                 <div>
                     <a href="#">
                         <img
-                            src="images/instagram.svg"
-                            alt=""
+                            src="{{ asset('assets/fylo/images/instagram.svg') }}"
+                            alt="Instagram Icon"
                             class="p-2 bg-darkBlue rounded-full ficon"
                         />
                     </a>

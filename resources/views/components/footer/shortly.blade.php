@@ -3,7 +3,7 @@
         class="container flex flex-col items-center justify-between mx-auto space-y-16 md:flex-row md:space-y-0 md:items-start"
     >
         <!-- Logo -->
-        <img src="images/logo.svg" alt="" />
+        <img src="{{ asset('assets/shortly/images/logo.svg') }}" alt="Shortly Logo" />
 
         <!-- Menus Container -->
         <div
@@ -64,16 +64,16 @@
         <!-- Social Container -->
         <div class="flex space-x-6">
             <a href="#">
-                <img src="images/icon-facebook.svg" alt="" class="ficon" />
+                <img src="{{ asset('assets/shortly/images/icon-facebook.svg') }}" alt="Facebook icon" class="ficon" />
             </a>
             <a href="#">
-                <img src="images/icon-twitter.svg" alt="" class="ficon" />
+                <img src="{{ asset('assets/shortly/images/icon-twitter.svg') }}" alt="Twitter icon" class="ficon" />
             </a>
             <a href="#">
-                <img src="images/icon-pinterest.svg" alt="" class="ficon" />
+                <img src="{{ asset('assets/shortly/images/icon-pinterest.svg') }}" alt="Pinterest icon" class="ficon" />
             </a>
             <a href="#">
-                <img src="images/icon-instagram.svg" alt="" class="ficon" />
+                <img src="{{ asset('assets/shortly/images/icon-instagram.svg') }}" alt="Instagram icon" class="ficon" />
             </a>
         </div>
     </div>
