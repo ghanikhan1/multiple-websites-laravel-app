@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fylo Landing Page</title>
+    <title>{{ $title ?? 'Multi Websites Title' }}</title>
+    <meta name="description" content="{{ $metaDescription ?? 'Multi Websites Description' }}">
 
     @vite(['resources/sass/loopstudio.scss', 'resources/js/loopstudio.js'])
 </head>

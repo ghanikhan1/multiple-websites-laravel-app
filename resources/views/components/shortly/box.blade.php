@@ -1,4 +1,4 @@
-@props(['image', 'heading', 'description', 'mt' => '0px']) <!-- Default value for $mt -->
+@props(['image', 'heading', 'description', 'mt' => '0px'])
 
 <div class="relative flex flex-col p-6 space-y-6 bg-white rounded-lg md:w-1/3" style="margin-top: {{ $mt }};">
     <!-- Image Positioning -->
