@@ -11,7 +11,7 @@
             >
                 <!-- Logo -->
                 <div class="h-8">
-                    <img src="images/logo.svg" alt="" class="w-44 md:ml-3" />
+                    <img src="{{ asset('assets/loopstudio/images/logo.svg') }}" alt="Loopstudio Logo" class="w-44 md:ml-3" />
                 </div>
                 <!-- Menu Container -->
                 <div
@@ -66,25 +66,25 @@
                     <!-- Icon 1 -->
                     <div class="h-8 group">
                         <a href="#">
-                            <img src="images/icon-facebook.svg" alt="" class="h-6" />
+                            <img src="{{ asset('assets/loopstudio/images/icon-facebook.svg') }}" alt="Facebook Icon" class="h-6" />
                         </a>
                     </div>
                     <!-- Icon 2 -->
                     <div class="h-8 group">
                         <a href="#">
-                            <img src="images/icon-twitter.svg" alt="" class="h-6" />
+                            <img src="{{ asset('assets/loopstudio/images/icon-twitter.svg') }}" alt="Twitter Icon" class="h-6" />
                         </a>
                     </div>
                     <!-- Icon 3 -->
                     <div class="h-8 group">
                         <a href="#">
-                            <img src="images/icon-pinterest.svg" alt="" class="h-6" />
+                            <img src="{{ asset('assets/loopstudio/images/icon-pinterest.svg') }}" alt="Pinterest Icon" class="h-6" />
                         </a>
                     </div>
                     <!-- Icon 4 -->
                     <div class="h-8 group">
                         <a href="#">
-                            <img src="images/icon-instagram.svg" alt="" class="h-6" />
+                            <img src="{{ asset('assets/loopstudio/images/icon-instagram.svg') }}" alt="Instagram Icon" class="h-6" />
                         </a>
                     </div>
                 </div>
