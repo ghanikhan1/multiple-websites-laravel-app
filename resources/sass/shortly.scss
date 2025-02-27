@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
 // Custom colors
 $cyan: hsl(180, 66%, 49%);
 $cyan-light: hsl(180, 66%, 69%);

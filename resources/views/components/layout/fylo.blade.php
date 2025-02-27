@@ -13,7 +13,7 @@
 
     @vite(['resources/sass/fylo.scss', 'resources/js/fylo.js'])
 </head>
-<body class="dark:bg-darkBlue dark:text-white font-opensans text-center">
+<body class="dark:bg-darkBlue dark:text-white text-center">
 <nav class="p-6 bg-black text-white">
     <a href="{{ url('/') }}" class="text-lg font-bold">Home</a>
 </nav>
