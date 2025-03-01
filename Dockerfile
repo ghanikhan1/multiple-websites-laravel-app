@@ -3,11 +3,16 @@ FROM php:8.2-apache
 
 # Install necessary extensions and dependencies
 RUN apt-get update && apt-get install -y \
+    unzip \
+    git \
     libpng-dev \
     libjpeg-dev \
     libfreetype6-dev \
     && docker-php-ext-configure gd --with-freetype --with-jpeg \
     && docker-php-ext-install gd pdo pdo_mysql
+
+# Install Composer
+COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 
 # Set the working directory
 WORKDIR /var/www/html
@@ -15,9 +20,8 @@ WORKDIR /var/www/html
 # Copy Laravel project files
 COPY . /var/www/html
 
-# Install Composer
-COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
-RUN composer install --no-dev --optimize-autoloader
+# Install Laravel dependencies with Composer
+RUN composer install --no-dev --optimize-autoloader --no-interaction --no-plugins --no-scripts
 
 # Set permissions
 RUN chown -R www-data:www-data /var/www/html \
