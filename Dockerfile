@@ -5,6 +5,9 @@ FROM php:8.2-apache
 RUN apt-get update && apt-get install -y \
     unzip \
     git \
+    curl \
+    nodejs \
+    npm \
     libpng-dev \
     libjpeg-dev \
     libfreetype6-dev \
@@ -20,19 +23,22 @@ WORKDIR /var/www/html
 # Copy Laravel project files
 COPY . /var/www/html
 
-# Install Laravel dependencies with Composer
+# Install PHP dependencies
 RUN composer install --no-dev --optimize-autoloader --no-interaction --no-plugins --no-scripts
-
-# Set permissions for storage and cache
-RUN chown -R www-data:www-data /var/www/html \
-    && chmod -R 775 /var/www/html/storage \
-    && chmod -R 775 /var/www/html/bootstrap/cache
 
 # Set Apache Document Root to Laravel's public folder
 RUN sed -i 's|DocumentRoot /var/www/html|DocumentRoot /var/www/html/public|' /etc/apache2/sites-available/000-default.conf
 
 # Enable Apache Rewrite Module (Required for Laravel)
 RUN a2enmod rewrite
+
+# Install JavaScript dependencies and build assets
+RUN npm install && npm run build
+
+# Set permissions for storage and cache
+RUN chown -R www-data:www-data /var/www/html \
+    && chmod -R 775 /var/www/html/storage \
+    && chmod -R 775 /var/www/html/bootstrap/cache
 
 # Expose port 80 for HTTP traffic
 EXPOSE 80
