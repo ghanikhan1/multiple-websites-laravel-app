@@ -38,17 +38,24 @@
             <div class="mt-20 p-4 border rounded-lg shadow-md bg-blue-100 dark:bg-gray-800 max-w-4xl mx-auto">
                 <h2 class="home-gradient-text text-xl">About This Project</h2>
                 <p class="mt-4 paragraph-text">
-                    This multipage Laravel application showcases a collection of custom-built landing pages with Tailwind CSS, SCSS, and Blade components.
+                    This project is a multi-brand landing page system built with Laravel, designed for scalability and maintainability. Each brand has its own dedicated SCSS and JavaScript files, ensuring clean separation of styles and functionality while keeping the codebase efficient and modular.
                 </p>
-                <h3 class="mt-6 home-gradient-text text-xl">🔹 Tech Stack & Features</h3>
+
+                <h3 class="mt-6 home-gradient-text text-xl">Approach</h3>
                 <ul class="mt-3 text-lg leading-relaxed list-disc list-inside">
-                    <li><strong>Laravel & Blade Components:</strong> Structured for modular development and easy scalability.</li>
-                    <li><strong>Custom Tailwind Configs:</strong> Ensuring a unified design system with utility-first styling.</li>
-                    <li><strong>SCSS for Styling:</strong> Individual SCSS files per page for maintainability and flexibility.</li>
-                    <li><strong>Vite for Asset Optimization:</strong> Faster builds and enhanced frontend performance.</li>
-                    <li><strong>SEO Best Practices:</strong> Optimized metadata, semantic HTML, and structured content.</li>
+                    <li><strong>Built from Figma/XD Designs:</strong> Developed pages based on modern UI designs without relying on pre-built templates.</li>
+                    <li><strong>Modular Laravel & Blade Components:</strong> Ensuring reusable and maintainable code for future scalability.</li>
+                    <li><strong>Custom SCSS Per Brand:</strong> Separate styling for each brand while maintaining a consistent UI structure.</li>
+                    <li><strong>Tailwind CSS & Utility-First Styling:</strong> Fast and efficient styling with performance-optimized CSS.</li>
+                    <li><strong>Vite for Asset Optimization:</strong> Enhancing development speed and reducing build times.</li>
+                    <li><strong>Git Version Control & CI/CD:</strong> Ensuring a smooth, team-friendly workflow.</li>
                 </ul>
+
+                <p class="mt-4 paragraph-text">
+                    This project highlights my ability to build custom, high-performance web applications using the Laravel ecosystem. I enjoy working in a team setting and would love the opportunity to contribute my skills to create well-structured, scalable web solutions.
+                </p>
             </div>
+
 
             <!-- Latest GitHub Repositories -->
             <div class="mt-16">
