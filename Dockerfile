@@ -23,15 +23,15 @@ COPY . /var/www/html
 # Install Laravel dependencies with Composer
 RUN composer install --no-dev --optimize-autoloader --no-interaction --no-plugins --no-scripts
 
-# Set permissions
+# Set permissions for storage and cache
 RUN chown -R www-data:www-data /var/www/html \
     && chmod -R 775 /var/www/html/storage \
     && chmod -R 775 /var/www/html/bootstrap/cache
 
-# Set environment variables
-ENV APACHE_DOCUMENT_ROOT /var/www/html/public
+# Set Apache Document Root to Laravel's public folder
+RUN sed -i 's|DocumentRoot /var/www/html|DocumentRoot /var/www/html/public|' /etc/apache2/sites-available/000-default.conf
 
-# Enable Apache Rewrite Module
+# Enable Apache Rewrite Module (Required for Laravel)
 RUN a2enmod rewrite
 
 # Expose port 80 for HTTP traffic
