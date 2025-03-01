@@ -11,6 +11,15 @@
     100% { transform: translateX(0); }
 }
 
-//.project-card:hover {
-//    animation: shake 0.9s ease-in-out;
-//}
+
+.heading-text{
+    @apply font-semibold text-gray-800 dark:text-gray-200;
+}
+.paragraph-text{
+    @apply text-gray-600 dark:text-gray-300 mt-2;
+}
+
+.home-gradient-text{
+    @apply font-bold;
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600 dark:from-indigo-400 dark:to-purple-500 ;
+}
