@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\Facades\URL;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -19,8 +20,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-//        \Illuminate\Support\Facades\Blade::anonymousComponentNamespace('components', 'fylo');
-//        \Illuminate\Support\Facades\Blade::anonymousComponentNamespace('components', 'loopstudio');
-//        \Illuminate\Support\Facades\Blade::anonymousComponentNamespace('components', 'shortly');
+        if (env('APP_ENV') === 'production') {
+            URL::forceScheme('https');
+        }
     }
 }
