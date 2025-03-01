@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: laravel-app
+    runtime: docker
+    repo: https://github.com/ghanikhan1/multiple-websites-laravel-app
+    branch: main
+    region: frankfurt
+    envVars:
+      - key: APP_ENV
+        value: production
+      - key: APP_DEBUG
+        value: ""
+      - key: APP_KEY
+        value: ""
+      - key: DB_CONNECTION
+        value: mysql
+      - key: DATABASE_URL
+        sync: false
+    autoDeploy: true
